@@ -23,7 +23,11 @@ public class Arraylist {
 System.out.println(list);
 //to add all 
 list.addAll(arr);
+System.out.println(list.size());
+//to remove all
+list.removeAll(list);
 System.out.println(list);
+
         Collection<Integer> collection=new ArrayList<>();
     }
 }
