@@ -1,7 +1,5 @@
 
-import java.util.Collection;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Arraylist {
     public static void main(String args[]){
@@ -25,9 +23,31 @@ System.out.println(list);
 list.addAll(arr);
 System.out.println(list.size());
 //to remove all
-list.removeAll(list);
-System.out.println(list);
+//list.removeAll(list);
+//System.out.println(list);
+list.clear();
+// I want to traverse list using iterator
+ArrayList<String> fruits = new ArrayList<>();
 
-        Collection<Integer> collection=new ArrayList<>();
-    }
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Mango");
+
+        Iterator<String> it = fruits.iterator();
+//An Iterator in the Java Collection Framework is an object that lets you traverse (iterate through) the elements of a collection one by one without needing to know how the collection is implemet
+
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
+List<Integer> list2=new ArrayList<>();
+list2.add(40);
+list2.add(10);
+list2.add(50);
+list2.add(100);
+System.out.println(list2.get(0));
 }
+
+
+    }
+
+
