@@ -8,6 +8,12 @@ public class Arraylist {
         //List or collection->interface
         //arraylist->concreate class
         ArrayList<Integer> arr=new ArrayList<>();
+        //add
+        arr.add(10);
+        arr.add(20);
+        arr.add(30);
+        System.out.println(arr);
+        
         List<Integer> list=new ArrayList<>();
         Collection<Integer> collection=new ArrayList<>();
     }
