@@ -45,9 +45,22 @@ list2.add(10);
 list2.add(50);
 list2.add(100);
 System.out.println(list2.get(0));
+System.out.println(list2.set(0,44));
+
+//to array
+Object[ ] arrrr=list2.toArray();
+for( Object obj :arr){
+    System.out.println(obj);
 }
+//for sorting 
+Collections.sort(list2);
+System.out.println("Printing the entrie list"+list2);
+//for sorting in descending order
 
+ Collections.sort(list2, Collections.reverseOrder());
+System.out.println(list2);
 
+}
     }
 
 
