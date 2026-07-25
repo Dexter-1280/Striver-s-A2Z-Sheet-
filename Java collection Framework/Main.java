@@ -9,7 +9,7 @@ class Student implements Comparable<Student> {
         this.name = name;
         this.age = age;
     }
-
+//Orverriding;
     public int compareTo(Student s) {
         //sorting in asending order
         return this.age - s.age;
