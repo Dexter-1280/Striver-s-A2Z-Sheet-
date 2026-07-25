@@ -2,6 +2,7 @@ import java.util.*;
 class MapMethods {
     public static void main(String args[]){
         //map java collection 
+        //In hash mapping the order is presrved unlike the linkedhash map
         Map<String,String> mapping=new HashMap<>();
         //insertion 
         //Map java collection is used as key --> value
@@ -27,5 +28,8 @@ System.out.println(table.size());
   System.out.println(mapping.containsKey("Apple"));
   //returns alll key set of the 
   System.out.println(mapping.keySet());
+  //get all entries from the map
+  System.out.println(mapping.entrySet());
+
                 }
 }
