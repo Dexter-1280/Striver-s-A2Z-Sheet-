@@ -5,7 +5,7 @@ class MapMethods {
         Map<String,String> mapping=new HashMap<>();
         //insertion 
         //Map java collection is used as key --> value
-        mapping.put("in", "India");
+       mapping.put("in", "India"); 
         mapping.put("in","india2"); 
         System.out.println(mapping);
         Map<String,String> table=new HashMap<>();
@@ -17,5 +17,15 @@ table.remove("br");
 System.out.println(table.size());
 table.clear();
 System.out.println(table.size());
+ mapping.put("en", "England"); 
+  mapping.put("es", "Spain"); 
+  mapping.putIfAbsent("is", "Indian3");
+  System.out.println(mapping);
+  mapping.get("er");
+  System.out.println(mapping);
+  //check if key exist or not
+  System.out.println(mapping.containsKey("Apple"));
+  //returns alll key set of the 
+  System.out.println(mapping.keySet());
                 }
 }
