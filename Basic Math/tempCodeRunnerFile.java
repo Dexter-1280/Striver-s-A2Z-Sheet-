@@ -1,15 +1,17 @@
 import java.util.*;
 
-public class Palidrome {
+ class Palidrome {
       static boolean isPalidrome(int x){
         int rev=0;
+          int originalNum=x;
         if(x<0) return false;
-        int originalNum=x;
+        while(x!=0){
+      
        int num=x%10;
         x=x/10;
         rev=rev*10+num;
-
-        return originalNum==rev ;
+        }
+        return rev==originalNum ;
         }
         
     public static void main(String args[]){
