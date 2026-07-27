@@ -1,6 +1,6 @@
 import java.util.*;
 
- class Palidrome {
+public class Palidrome {
       static boolean isPalidrome(int x){
         int rev=0;
         if(x<0) return false;
