@@ -1,24 +1,26 @@
 import java.util.*;
+class AddDigits {
+    
 
- class Palidrome {
-      static boolean isPalidrome(int x){
-        int rev=0;
-          int originalNum=x;
-        if(x<0) return false;
-        while(x!=0){
-      
-       int num=x%10;
-        x=x/10;
-        rev=rev*10+num;
+    static int addDigits(int num) {
+      while(num>=10){
+       int  sum=0;
+         while(num>0){
+           sum+=num%10;
+           num/=10;
         }
-        return rev==originalNum ;
-        }
-        
-    public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        int x=sc.nextInt();
-        System.out.println("Enter your value:");
-      isPalidrome(x);
-      sc.close();
+        num=sum;
+      }  
+       
+        return num;
     }
+    public static void main(String arg[]){
+ 
+
+
+    Scanner sc = new Scanner(System.in);
+    int num = sc.nextInt();
+
+    System.out.println(addDigits(num));
+}
 }

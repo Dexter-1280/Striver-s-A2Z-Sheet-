@@ -1,5 +1,7 @@
 import java.util.*;
 class AddDigits {
+    
+
     static int addDigits(int num) {
       while(num>=10){
        int  sum=0;
@@ -13,10 +15,12 @@ class AddDigits {
         return num;
     }
     public static void main(String arg[]){
-        Scanner sc=new Scanner(System.in);
-        
-        int num;
-        System.out.println("Enter the number:");
-        addDigits(num);
-    }
+ 
+
+
+    Scanner sc = new Scanner(System.in);
+    int num = sc.nextInt();
+
+    System.out.println(addDigits(num));
+}
 }
